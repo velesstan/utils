@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strict": true,
+    "target": "es6",
+    "outDir": "./lib",
+    "module": "ES6"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

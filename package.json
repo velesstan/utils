@@ -1,0 +1,23 @@
+{
+  "name": "@velesstan/utils",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "description": "Velesstan ERP Utils",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velesstan/utils.git"
+  },
+  "author": "Evgheni Calcutin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velesstan/utils/issues"
+  },
+  "homepage": "https://github.com/velesstan/utils#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
