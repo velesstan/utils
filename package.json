@@ -2,7 +2,6 @@
   "name": "@velesstan/utils",
   "version": "1.0.1",
   "main": "lib/index.js",
-  "description": "Velesstan ERP Utils",
   "type": "module",
   "scripts": {
     "build": "tsc"
@@ -18,6 +17,12 @@
   },
   "homepage": "https://github.com/velesstan/utils#readme",
   "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@velesstan/interfaces": "^1.0.8",
     "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "xlsx": "^0.16.9"
   }
 }
