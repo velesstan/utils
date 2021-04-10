@@ -1,6 +1,6 @@
 {
   "name": "@velesstan/utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "lib/index.js",
   "scripts": {
     "build": "rimraf lib && tsc",
