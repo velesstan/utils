@@ -1,8 +1,8 @@
-import { Product } from "@velesstan/interfaces";
+import { Product, Category } from "@velesstan/interfaces";
 import xlsx from "xlsx";
 
 interface ProductData {
-  category: string;
+  category: Category;
   products: Product[];
 }
 
@@ -22,8 +22,8 @@ export const createProductsXlsxBook = (productData: ProductData[]): Buffer => {
         ]
       ),
     ]);
-    wb.SheetNames.push(category);
-    wb.Sheets[category] = ws;
+    wb.SheetNames.push(category.title);
+    wb.Sheets[category.title] = ws;
   }
   return xlsx.write(wb, { bookType: "xlsx", type: "buffer" });
 };
