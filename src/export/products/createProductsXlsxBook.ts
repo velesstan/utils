@@ -2,7 +2,7 @@ import { Product, Category } from "@velesstan/interfaces";
 import xlsx from "xlsx";
 
 interface ProductData {
-  category: Category;
+  category: Omit<Category, "_id">;
   products: Omit<Product, "_id" | "category" | "requires">[];
 }
 
