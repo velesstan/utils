@@ -3,7 +3,7 @@ import xlsx from "xlsx";
 
 interface ProductData {
   category: Category;
-  products: Product[];
+  products: Omit<Product, "category" | "requires">[];
 }
 
 export const createProductsXlsxBook = (productData: ProductData[]): Buffer => {
